@@ -1,4 +1,4 @@
-// Insert a number: if even print it, otherwise (uneven) print the following
+// Insert a number: if even print it, if uneven print the following one
 // Variables
 var userNumber; 
 
