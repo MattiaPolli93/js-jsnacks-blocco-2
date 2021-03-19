@@ -1,4 +1,4 @@
-// In an array of objects (football teams; properties: name - to compile, scores - set to 0, fouls - set to 0), generate random numbers instead of 0 ( scores, fouls). Then create a new array inside which name and fouls are inserted. Display everything in the console.
+// In an array of objects (football teams; properties: name - to compile, scores - set to 0, fouls - set to 0), generate random numbers instead of 0 (scores, fouls). Then create a new array inside which name and fouls are inserted. Display the newly created array in the console.
 
 // First part
 var teams = [
@@ -16,7 +16,7 @@ var teams = [
         name: "Inter",
         scores: 0,
         fouls: 0
-    },
+    }
 ];
 
 // Second part
@@ -26,11 +26,13 @@ for (var i = 0; i < teams.length; i++) {
 }
 
 // Third part
-var newTeams = [];
+var teamFouls = [];
 
 for (var i = 0; i < teams.length; i++) {
-    newTeams.push({name: teams[i].name, fouls: teams[i].fouls});
+    teamFouls.push({
+        name: teams[i].name, fouls: teams[i].fouls
+    });
 }
 
 // Displaying
-console.log(newTeams);
+console.log(teamFouls);
